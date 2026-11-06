@@ -1,0 +1,12 @@
+# Pinned build inputs for the l09g-airdrop chroot (aarch64, musl).
+
+Alpine: 3.23 (OrbStack machine `airplay-build`, arm64 — native, no cross)
+shairport-sync: 5.6.1 (AirPlay 2, smi11)
+nqptp: 1.2.9 (smi11 — must match shairport-sync)
+FFmpeg: 8.1.2, minimal static (alac,aac decoders + swresample only)
+  sha256: 464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c
+shairport-sync configure:
+  --with-airplay-2 --with-alsa --with-avahi --with-ssl=openssl --with-soxr --with-metadata
+chroot runtime (apk): musl busybox alsa-lib avahi dbus libconfig popt soxr
+  libcrypto3 libssl3 libsodium libgcrypt libgpg-error libplist libuuid
+  gettext-libs libgcc libgomp
