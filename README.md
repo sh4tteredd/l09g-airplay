@@ -1,4 +1,4 @@
-# l09g-airplay d
+# l09g-airplay
 
 Turn a stock Xiaomi Mi Smart Speaker (L09G, Global) into a dedicated,
 persistent **AirPlay 2** receiver. No Cast, no buttons, no voice — one job.
